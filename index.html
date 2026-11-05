@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Folio Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap">
+<style>
+/* Layout: one readable column, a ledger-style summary of what leaves the device, then the full policy */
+:root{
+  --bg:#f4f6f6; --paper:#ffffff; --ink:#132228; --muted:#566a71; --rule:#dbe2e4; --accent:#b8661c; --ok:#0b7a55;
+  --display:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --body:Geist, "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#0c1a20;--paper:#11242c;--ink:#e8f1f2;--muted:#8fa8ae;--rule:#1f3a44;--accent:#f2b266;--ok:#5fe3b3;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0c1a20;--paper:#11242c;--ink:#e8f1f2;--muted:#8fa8ae;--rule:#1f3a44;--accent:#f2b266;--ok:#5fe3b3;color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+.wrap{max-width:720px;margin:0 auto;display:grid;gap:28px}
+header{display:grid;gap:8px}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+h1{font:600 clamp(30px,6vw,42px)/1.1 var(--display);margin:0;text-wrap:balance}
+.meta{color:var(--muted);font-size:14px}
+h2{font:600 22px/1.25 var(--display);margin:0 0 8px;text-wrap:balance}
+p,ul{margin:0}
+section{display:grid;gap:10px}
+ul{padding-left:20px;display:grid;gap:6px}
+a{color:var(--accent)}
+.lead{font-size:18px}
+.ledger{background:var(--paper);border:1px solid var(--rule);border-radius:12px;overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14.5px}
+th,td{text-align:left;padding:12px 16px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600;white-space:nowrap}
+.never{display:flex;flex-wrap:wrap;gap:8px}
+.never span{border:1px solid var(--rule);border-radius:999px;padding:4px 12px;font-size:14px;color:var(--ok)}
+footer{color:var(--muted);font-size:14px;border-top:1px solid var(--rule);padding-top:16px}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <span class="eyebrow">Folio Finance for Windows · Folio Mobile for Android</span>
+    <h1>Folio Privacy Policy</h1>
+    <p class="meta">Effective November 4, 2026 · Published by Folio Apps</p>
+  </header>
+
+  <p class="lead">Folio is a personal tracker for your investments and everyday money. It has no accounts, no servers of its own and no cloud. What you put in Folio stays on your device.</p>
+
+  <div class="never" aria-label="What Folio never does">
+    <span>No sign-up</span><span>No ads</span><span>No analytics or tracking</span><span>No selling of data</span><span>Can’t move money</span>
+  </div>
+
+  <section>
+    <h2>What Folio stores, and where</h2>
+    <p>Your holdings, watchlists, alerts, accounts, transactions, budgets, bills, goals, settings, your optional name and profile picture, and your optional job and pay details are stored only on your device:</p>
+    <ul>
+      <li><b>Windows:</b> in Folio’s app data folder on your PC, with a backup copy and daily backups in the same place.</li>
+      <li><b>Android:</b> in Folio’s private app storage. Folio’s data is excluded from Android cloud backup and device transfer.</li>
+    </ul>
+    <p>You can turn on encryption, which locks this data with a key tied to your Windows account (Windows) or held in the Android Keystore (Android). If you set a PIN, only a salted hash of it is stored.</p>
+  </section>
+
+  <section>
+    <h2>What leaves your device</h2>
+    <p>Folio contacts these services only to show you information. It never sends your balances, holdings amounts, transactions, budgets or personal details to them.</p>
+    <div class="ledger">
+      <table>
+        <thead><tr><th>Service</th><th>What Folio sends</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Yahoo Finance</td><td>Ticker symbols you track or search for</td><td>Prices, charts, dividends and news headlines</td></tr>
+          <tr><td>Reddit, StockTwits</td><td>Ticker symbols you track</td><td>Social posts on the Media tab. You can turn this off in Settings, Privacy and security.</td></tr>
+          <tr><td>Google icon service</td><td>Website addresses of brokers and banks in the import list</td><td>Company icons in that list</td></tr>
+          <tr><td>Plaid (optional)</td><td>Only if you link a bank: your Plaid keys and the bank connection’s access token</td><td>Reading your linked accounts’ balances and transactions when you press Refresh</td></tr>
+          <tr><td>SimpleFIN (optional, Windows only)</td><td>Only if you link it: your SimpleFIN access</td><td>Reading balances and transactions when you press Refresh</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>These services receive your device’s IP address as part of any internet request, and their own privacy policies apply to what they receive.</p>
+  </section>
+
+  <section>
+    <h2>Linked banks</h2>
+    <p>Bank linking is optional and read-only. You sign in to your bank on Plaid’s own secure page in your browser, so Folio never sees your bank username or password. Plaid can only read your balances and transactions for Folio; it can’t send, move or receive money. Folio uses Plaid keys that belong to you. The keys and access tokens are kept in a separate vault that is always encrypted on your device, never shown in the app and never included in backups or exports. Folio checks your bank only when you press Refresh.</p>
+    <p>When you unlink a bank, Folio asks Plaid to revoke its access. Plaid’s handling of your data is described in the <a href="https://plaid.com/legal/#end-user-privacy-policy" target="_blank" rel="noopener">Plaid End User Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>Notifications</h2>
+    <p>Alerts are checked on your device and shown as notifications by Windows or Android. You choose how much a notification shows, including hiding dollar amounts, in Settings, Privacy and security.</p>
+  </section>
+
+  <section>
+    <h2>Files, backups and exports</h2>
+    <p>Folio reads a file only when you choose it, for example a broker or bank export, a backup or a profile picture. Backups and exports are saved only where you choose to save them. A backup file is not encrypted, so keep it somewhere private.</p>
+  </section>
+
+  <section>
+    <h2>Tester builds</h2>
+    <p>Android tester builds are delivered through Firebase App Distribution, which Google operates. Google receives the email address you use to join the test and basic information about installs, under <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase’s privacy terms</a>. The Folio app itself contains no Firebase or Google analytics code.</p>
+  </section>
+
+  <section>
+    <h2>Deleting your data</h2>
+    <ul>
+      <li>In Folio: Settings, Data and backups, Erase everything. This also unlinks any banks.</li>
+      <li>On Android, uninstalling Folio deletes its data.</li>
+      <li>On Windows, the Microsoft Store version’s data is removed when you uninstall it. The data folder of the standalone installer version stays until you delete it.</li>
+    </ul>
+    <p>Because Folio’s data never reaches us, we can’t view, recover or delete it for you. Everything is in your control on your device.</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Folio is not directed to children under 13, and we don’t knowingly collect information from them. Folio itself collects nothing from anyone.</p>
+  </section>
+
+  <section>
+    <h2>Not financial advice</h2>
+    <p>Folio is a tracking tool. Prices may be delayed, and insights and trend ratings are general information calculated from your own data, not investment, tax, legal or financial advice.</p>
+  </section>
+
+  <section>
+    <h2>Changes and contact</h2>
+    <p>If this policy changes, we’ll update this page and its effective date, and note the change in the app’s release notes. For questions about this policy or your privacy in Folio, email <b>illicityxd@gmail.com</b>.</p>
+  </section>
+
+  <footer>Folio Apps · This policy covers Folio Finance for Windows and Folio Mobile for Android, version 0.3.0-tester and later.</footer>
+</div>
+</body>
+</html>
